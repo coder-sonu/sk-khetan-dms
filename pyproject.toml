@@ -1,0 +1,12 @@
+[project]
+name = "sk-khetan-dms"
+version = "12.0.3"
+description = "Sk Khetan Group Fleet DMS"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "Flask>=3.0,<4",
+  "openpyxl>=3.1,<4"
+]
+
+[tool.vercel]
+entrypoint = "app:app"

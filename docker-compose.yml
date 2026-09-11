@@ -1,0 +1,11 @@
+services:
+  dms:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DMS_SECRET_KEY: ${DMS_SECRET_KEY:-change-this-in-production}
+      PORT: 8000
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

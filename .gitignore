@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+!.env.production.example
+__pycache__/
+*.pyc
+uploads/
+data/*.sqlite3
+.DS_Store
+.vercel/
